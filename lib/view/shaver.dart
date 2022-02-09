@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shaver/common/assets/images.dart';
 import 'package:shaver/common/vibration_service.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,12 @@ class ShaverView extends StatelessWidget {
             // will vibrate for ever
             log('stop infinity vibration');
             await VibrationService.stop();
+
+            // show alert to user if he cancel the tap
+            Fluttertoast.showToast(
+              msg: "لا تحرك إصبعك حتى لا يتوقف الإهتزاز",
+              toastLength: Toast.LENGTH_SHORT,
+            );
           },
           child: Container(
             constraints: const BoxConstraints.expand(),
