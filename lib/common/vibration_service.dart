@@ -1,6 +1,10 @@
 import 'package:vibration/vibration.dart';
 
+/// Helper class that contain all methods that control of device vibration
 abstract class VibrationService {
+  /// Private const constructor to prevent getting an instance from class
+  const VibrationService._();
+
   /// I created this variable because we don't have any package that supports
   /// infinite vibration.
   /// Used to check if the current vibration is over and we want to repeat the
@@ -47,7 +51,8 @@ abstract class VibrationService {
 //     await Future<void>.delayed(
 //       Duration(
 //         milliseconds: vibrationDurationByMilliSeconds -
-//             (DateTime.now().difference(timeBeforeStartVibration).inMilliseconds),
+//             (DateTime.now()
+//             .difference(timeBeforeStartVibration).inMilliseconds),
 //       ),
 //     );
 //     if (_repeat) {

@@ -8,7 +8,7 @@ version: 1.0.0+1
 environment:
   #  replace sdk from ">=2.15.1 <3.0.0" to ">=2.7.1 <3.0.0" because i don't found any package
   #  support the vibration with custom duration
-  sdk: ">=2.7.1 <3.0.0"
+  sdk: ">=2.15.1 <3.0.0"
 
 dependencies:
   flutter:
@@ -18,20 +18,29 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
+  # ***  State management ***
+  bloc: ^8.0.2
+  flutter_bloc: ^8.0.1
+
   # ***  Device Services Packages ***
 
   # For handling Vibration API on iOS, Android, and web.
   # (null safety not support)
-  vibration: ^1.7.3
+  vibration: ^1.7.4-nullsafety.0 #^1.7.3
 
   # For handling Vibration API on iOS, Android, and web.
   # (not support setting vibration duration)
 #  flutter_vibrate: ^1.3.0
 
+  # Is a feature-rich audio player for Android, iOS, macOS and web
+  just_audio: ^0.9.19
+
+
   # ***  UI Helper Packages ***
   # Toast widget that like toast in native android
   # It like snack bar used to show the user short massage
   fluttertoast: ^8.0.8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -43,3 +52,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/sounds/

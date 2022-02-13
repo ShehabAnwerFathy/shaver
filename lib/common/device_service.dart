@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-/// Helper class that contain main device data wee need
+/// Helper class that contain main device data we need
 abstract class DeviceService {
   /// Private Const constructor to prevent getting an object of this class
   const DeviceService._();
