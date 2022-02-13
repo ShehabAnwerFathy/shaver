@@ -39,7 +39,7 @@ class ShaverCubit extends Cubit<ShaverStates> {
         log('The shaver is already running now');
         return;
       }
-
+      // TODO: Fix Effect delay
       // play effects
       _playShaveVibration();
       _playShaverSound();
@@ -61,6 +61,7 @@ class ShaverCubit extends Cubit<ShaverStates> {
         log('The Shaver is already stopped now');
       }
 
+      // TODO: Fix Effect delay
       // stop effects
       _stopShaverSound();
       _stopShaveVibration();
