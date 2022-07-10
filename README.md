@@ -20,3 +20,12 @@ Flutter 2.8.1 • channel stable • https://github.com/flutter/flutter.git
 Framework • revision 77d935af4d (8 weeks ago) • 2021-12-16 08:37:33 -0800
 Engine • revision 890a5fca2e
 Tools • Dart 2.15.1
+
+
+keytool -genkey -v -keystore c:\Users\sheha\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+Is CN=shehab anwer, OU=shehab, O=shehab, L=shehab, ST=shehab, C=sh correct?
+
+storePassword=Shehab*123
+keyPassword=Shehab*123
+keyAlias=upload
+storeFile=\\upload-keystore.jks
